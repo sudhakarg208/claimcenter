@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Guidewire application suite">
+	
+	<listeners>
+	<listener class-name="gw.qa.util.GenerateExtentReport"></listener>
+	<listener class-name="gw.qa.util.GWTransformer"></listener>
+	</listeners>
+	<test name="Guidewire cc Regression suite">
+	
+	<classes>
+			<class name="gw.qa.guidewiretest.LossDetailsTest" />
+	</classes>
+	
+	
+	</test>
+</suite>

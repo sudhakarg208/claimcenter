@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Guidewire application suite]">
+  <listeners>
+    <listener class-name="gw.qa.util.GenerateExtentReport"/>
+    <listener class-name="gw.qa.util.GWTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Guidewire cc Regression suite(failed)">
+    <classes>
+      <class name="gw.qa.guidewiretest.LossDetailsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="claimTest" invocation-numbers="0 0 0 1 1 2 2 3 3"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- gw.qa.guidewiretest.LossDetailsTest -->
+    </classes>
+  </test> <!-- Guidewire cc Regression suite(failed) -->
+</suite> <!-- Failed suite [Guidewire application suite] -->
