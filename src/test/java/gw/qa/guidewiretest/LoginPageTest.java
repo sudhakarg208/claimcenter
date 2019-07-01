@@ -31,7 +31,7 @@ public class LoginPageTest extends TestBase{
 //		Assert.assertEquals(login.validateGWTitle(), "[DEV mode - 6.0.0.103] Guidewire ClaimCenter");	
 //	}
 	
-	@DataProvider
+	/*@DataProvider
 	public Iterator<Object[]> getMydata() {
 		ArrayList<Object[]> logindata = GetLoginData.getData();
 		return logindata.iterator();
@@ -41,6 +41,12 @@ public class LoginPageTest extends TestBase{
 	public void loginTest(String username,String password) {
 		System.out.println("Hiiiiiiiiiiiiiiiiiiiiiiiiiii" + login);
 		login.validateLogin(username,password);
+	}*/
+	
+	@Test
+	public void loginTest() {
+		System.out.println("Hiiiiiiiiiiiiiiiiiiiiiiiiiii" + login);
+		login.validateLogin("su","gw");
 	}
 	
 	@AfterMethod

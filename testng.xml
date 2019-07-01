@@ -4,14 +4,14 @@
 
 <suite name="Guidewire application suite">
 	
-	<listeners>
+	<!-- <listeners>
 	<listener class-name="gw.qa.util.GenerateExtentReport"></listener>
 	<listener class-name="gw.qa.util.GWTransformer"></listener>
-	</listeners>
+	</listeners> -->
 	<test name="Guidewire cc Regression suite">
 	
 	<classes>
-			<class name="gw.qa.guidewiretest.LossDetailsTest" />
+			<class name="gw.qa.guidewiretest.LoginPageTest" />
 	</classes>
 	
 	
